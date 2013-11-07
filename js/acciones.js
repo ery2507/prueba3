@@ -5,10 +5,10 @@ $(document).ready(function(e){// e de evento
 			var boton =(($(this).attr('class')).split(' '))[1];
 			switch (boton){
 				case 'b1': 
-				navigator.notificacion.beep(2);
+				navigator.notification.beep(2);
 				break;
 				case 'v1': 
-				navigator.notificacion.vibrate(1000);
+				navigator.notification.vibrate(1000);
 				break;
 				}
 		});//tap
