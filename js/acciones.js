@@ -10,7 +10,23 @@ $(document).ready(function(e){// e de evento
 				case 'v1': 
 				navigator.notification.vibrate(1000);
 				break;
-				}
+				}//switch
+			
 		});//tap
+		$('#izg').swipeleft(function (){
+				navigator.notification.alert("Deslizó a la izquierda",function(){"prueba4","Aceptar"});//alert
+			});//barrer a la izquierda
+			$('#der').swipelrigth(function (){
+				navigator.notification.confirm("que deseas realizar",function(opt){
+				switch (opt){
+					case 1: 
+						navigator.notification.beep(4);
+					break;
+					case 2: 
+						navigator.notification.vibrate(2000);
+					break;
+				}//switch
+					});//confirm
+			});//barrer a la derecha
 	},false);// deviceready
 });// ready

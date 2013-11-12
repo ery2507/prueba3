@@ -17,8 +17,8 @@
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-			<li><a href="#page2">ACCIONES</a></li>
-            <li><a href="#page3">EVENTOS</a></li>
+			<li><a href="#page2" data-transition="fade">ACCIONES</a></li>
+            <li><a href="#page3" data-transition="pop">EVENTOS</a></li>
 		</ul>		
 	</div>
 	<div data-role="footer">
@@ -32,12 +32,47 @@
 	</div>
 	<div data-role="content">	
     <ul data-role="listview">
-		<li><a  class="btn b1">SONIDOS</a></li>
-            <li><a class="btn v1">ALERTAS</a></li></ul></div>
+		<li class="btn b1">SONIDOS</li>
+            <li class="btn v1">ALERTAS</li></ul></div>
 	<div data-role="footer">
 		<h4>ERYK@</h4>
 	</div>
 </div>
 
+<div data-role="page" id="page3">
+	<div data-role="header">
+		EVENTOS
+	</div>
+	<div data-role="content">	
+    <ul data-role="controlgroup" data-type="vertical">
+		<li><a data-role="button" href="#page4"  data-transition="flip" >IZQUIERDA</a></li>
+            <li ><a data-role="button" href="#page5" data-transition="slidedown">DERECHA</a></li></ul></div>
+	<div data-role="footer">
+		<h4>ERYK@</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		IZQUERDA
+	</div>
+	<div data-role="content" align="center">	
+   	  <div id="izq" style="width: 80%; height:200px; background-color:#C6F;  ">  </div>
+      </div>
+	<div data-role="footer">
+		<h4>ERYK@</h4>
+	</div>
+</div>
+<div data-role="page" id="page5">
+	<div data-role="header">
+		DERECHA
+	</div>
+	<div data-role="content" align="center">	
+   <div id="der" style="width: 80%; height:200px; background-color:#09F;"> </div>
+   </div>
+	<div data-role="footer">
+		<h4>ERYK@</h4>
+	</div>
+</div>
 </body>
 </html>
