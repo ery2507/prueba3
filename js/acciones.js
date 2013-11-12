@@ -14,5 +14,9 @@ $(document).ready(function(e){// e de evento
 			
 		});//tap
 		
+		$('#izq').swipeleft(function (){
+				navigator.notification.alert("Deslizó a la izquierda",function(){"prueba4","Aceptar"});//alert
+			});//barrer a la izquierda
+		
 	},false);// deviceready
 });// ready
