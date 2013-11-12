@@ -13,10 +13,10 @@ $(document).ready(function(e){// e de evento
 				}//switch
 			
 		});//tap
-		$('#izg').swipeleft(function (){
+		$('#izq').swipeleft(function (){
 				navigator.notification.alert("Deslizó a la izquierda",function(){"prueba4","Aceptar"});//alert
 			});//barrer a la izquierda
-			$('#der').swipelrigth(function (){
+			$('#der').swiperigth(function (){
 				navigator.notification.confirm("que deseas realizar",function(opt){
 				switch (opt){
 					case 1: 
