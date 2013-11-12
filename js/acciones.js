@@ -17,6 +17,17 @@ $(document).ready(function(e){// e de evento
 		$('#izq').swipeleft(function (){
 				navigator.notification.alert("Deslizó a la izquierda",function(){"prueba4","Aceptar"});//alert
 			});//barrer a la izquierda
-		
+		$('#der').swiperight(function (){
+				navigator.notification.confirm("que deseas realizar",function(opt){
+				switch (opt){
+					case 1: 
+						navigator.notification.beep(4);
+					break;
+					case 2: 
+						navigator.notification.vibrate(2000);
+					break;
+				}//switch
+					}"Prueba04","Beep, Vibrar, Cancelar");//confirm
+			});//barrer a la derecha
 	},false);// deviceready
 });// ready
