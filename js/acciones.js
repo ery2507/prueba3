@@ -27,7 +27,7 @@ $(document).ready(function(e){// e de evento
 						navigator.notification.vibrate(2000);
 					break;
 				}//switch
-					}"Prueba04","Beep, Vibrar, Cancelar");//confirm
+					},"Prueba04","Beep, Vibrar, Cancelar");//confirm
 			});//barrer a la derecha
 	},false);// deviceready
 });// ready
